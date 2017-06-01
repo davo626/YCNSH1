@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+
+    tools:context="com.example.student4.ycnsh.Gameplay_Activity">
+
+<com.example.student4.ycnsh.GameView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+    <ImageButton
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:id="@+id/startGameButton"
+        android:onClick="onStartButtonClick"
+        android:background="@drawable/start_button"
+        android:layout_alignBottom="@+id/moveRightButton"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/moveLeftButton"
+        android:onClick="onLeftButtonClick"
+        android:background="@drawable/move_left"
+        android:layout_alignTop="@+id/hitButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/moveRightButton"
+        android:onClick="onRightButtonClick"
+        android:background="@drawable/move_right"
+        android:layout_alignTop="@+id/moveLeftButton"
+        android:layout_toRightOf="@+id/moveLeftButton"
+        android:layout_toEndOf="@+id/moveLeftButton"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/hitButton"
+        android:onClick="onHitButtonClick"
+        android:background="@drawable/hit_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignRight="@+id/hitButton"
+        android:layout_alignEnd="@+id/hitButton" />
+
+</RelativeLayout>
