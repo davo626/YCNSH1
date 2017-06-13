@@ -8,5 +8,6 @@ public class Bot extends Man{
 
     public Bot() {
         health=1;
+
     }
 }

@@ -12,6 +12,7 @@ public abstract class Man {
     public static double vx, vy;
     public static double x, y;
     int condition=1;
+    int speed=1;
 
 
 
